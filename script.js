@@ -19,8 +19,9 @@ function displayQuestion(question) {
   if (question.options) {
     for (let i = 0; i < question.options.length; i++) {
       const option = question.options[i];
-      optionsHTML.push(`<li><button onclick="checkAnswer('${option}', '${question.correctAnswer}')">${option}</button></li>`);
+      optionsHTML.push(`<li><button>${option}</button></li>`);
     }
+    document.getElementById.('button').innerHTML = '<li><button onclick = "checkAnswer(\'' + option + '\', \'' + question.correctAnswer + '\')">' + checkAnswer + '</button></li>';
   }
 
   // Set the inner HTML of the question container
