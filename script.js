@@ -1,7 +1,7 @@
 fetch('questions.json')
   .then(response => response.json()) // Parse the JSON response
   .then(questions => {               // Handle the array of questions
-    const today = new Date().toISOString().split('T')[0]; // Current date in YYYY-MM-DD format(NEED TO CHANGE TO JUST DAY)
+    const today = new Date().getDate();
     const todaysQuestion = questions.find(q => q.date === today); // Find today's question
 
     if (todaysQuestion) {
