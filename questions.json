@@ -1,0 +1,12 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "text": "As Mexico’s first president from an Indigenous community, Benito Juarez became one of the most ______ figures in his country’s history: among the many significant accomplishments of his long tenure in office (1858–1872), Juarez consolidated the authority of the national government and advanced the rights of Indigenous peoples.",
+        "options": ["unpredictable", "important", "secretive", "ordinary"],
+        "correctAnswer": "important"
+      }
+      
+      
+    ]
+  }
