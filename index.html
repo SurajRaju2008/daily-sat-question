@@ -3,17 +3,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* General Reset */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    /* Body Styling */
     body {
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(135deg, #2c3e50, #4c8c8c); /* Subtle gradient background */
+      background: linear-gradient(135deg, #2c3e50, #4c8c8c);
       color: #fff;
       display: flex;
       justify-content: center;
@@ -31,12 +29,12 @@
       letter-spacing: 2px;
       text-transform: uppercase;
       color: #ecf0f1;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Glowing effect on title */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
 
     #question {
       font-size: 1.5rem;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.7);
       padding: 20px;
       border-radius: 8px;
       width: 80%;
@@ -46,6 +44,7 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       transform: translateY(-10px);
       transition: transform 0.3s ease-in-out;
+      color: #fff;
     }
 
     #question:hover {
@@ -54,7 +53,7 @@
 
     #result {
       font-size: 1.2rem;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.7);
       padding: 15px;
       border-radius: 8px;
       width: 80%;
@@ -62,11 +61,11 @@
       margin-top: 20px;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      opacity: 0;
+      opacity: 0; /* Initially hidden */
       transition: opacity 0.3s ease-in-out;
+      color: #fff;
     }
 
-    /* Button Styling */
     button {
       background-color: #4CAF50;
       border: none;
@@ -89,7 +88,6 @@
       background-color: #388e3c;
     }
 
-    /* Options Button Styling */
     .options {
       display: flex;
       justify-content: center;
@@ -116,20 +114,11 @@
       background-color: #1e8449;
     }
 
-    /* Feedback Animation */
-    .feedback {
-      opacity: 1;
-      animation: fadeIn 1s ease;
+
+    .feedback-visible {
+      opacity: 1 !important; 
     }
 
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
   </style>
   <title>Daily SAT Question</title>
 </head>
@@ -137,9 +126,7 @@
   <h1>Daily SAT Practice</h1>
   <div id="question">Loading...</div>
   <div id="button"></div>
-  <div id="result" class="feedback"></div>
-
-  <!-- Link to external JavaScript file -->
+  <div id="result" class="feedback-visible"></div>
   <script src="script.js"></script>
 </body>
 </html>
