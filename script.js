@@ -2,7 +2,7 @@ fetch('questions.json')
   .then(response => response.json()) // Parse the JSON response
   .then(data => { // Handle the entire question data
     const today = new Date().getDate(); // Get today's day (1-31)
-    const todaysQuestion = data.questions.find(q => q.id === today); // Find the question for today by ID
+    const todaysQuestion = data.questions.find(q => q.id == today); // Find the question for today by ID
 
     if (todaysQuestion) {
       displayQuestion(todaysQuestion); // Display the question if found
@@ -31,9 +31,9 @@ function displayQuestion(question) {
 
 function checkAnswer(selected, correctAnswer) {
   const resultContainer = document.getElementById('result');
-  if (selected === correctAnswer) {
+  if (selected == correctAnswer) {
     resultContainer.innerHTML = "Correct!";
   } else {
-    resultContainer.innerHTML = `Incorrect! The correct answer is: ${correctAnswer}`;
+    resultContainer.innerHTML = "Incorrect! The correct answer is: " + correctAnswer;
   }
 }
