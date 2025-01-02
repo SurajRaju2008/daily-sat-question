@@ -1,12 +1,164 @@
 {
-    "questions": [
-      {
-        "id": 1,
-        "text": "As Mexico’s first president from an Indigenous community, Benito Juarez became one of the most ______ figures in his country’s history: among the many significant accomplishments of his long tenure in office (1858–1872), Juarez consolidated the authority of the national government and advanced the rights of Indigenous peoples.",
-        "options": ["unpredictable", "important", "secretive", "ordinary"],
-        "correctAnswer": "important"
-      }
-      
-      
-    ]
+    "questions": {
+      "math": [
+        {
+          "id": 1,
+          "text": "For what model year is the percent of cars for sale the smallest?",
+          "options": ["2012", "2013", "2014", "2015"],
+          "correctAnswer": "2014"
+        },
+        {
+          "id": 2,
+          "text": "What is the probability of selecting a bead that has a defect?",
+          "options": ["1/2900", "1/29", "29/100", "29/10"],
+          "correctAnswer": "29/100"
+        },
+        {
+          "id": 3,
+          "text": "In the figure, line m is parallel to line n, and line t intersects both lines. What is the value of x?",
+          "options": ["33", "57", "123", "147"],
+          "correctAnswer": "57"
+        },
+        {
+          "id": 4,
+          "text": "What is the y-intercept of the graph shown?",
+          "options": ["(-8, 0)", "(-6, 0)", "(0, 6)", "(0, 8)"],
+          "correctAnswer": "(0, 6)"
+        },
+        {
+          "id": 5,
+          "text": "What is the total cost to lease a car when the monthly payment is $400?",
+          "options": ["$13,400", "$13,000", "$15,400", "$37,400"],
+          "correctAnswer": "$15,400"
+        },
+        {
+          "id": 6,
+          "text": "Each side of a square has a length of 45. What is the perimeter of this square?",
+          "answerFormat": "numeric",
+          "correctAnswer": "180"
+        },
+        {
+          "id": 7,
+          "text": "Solve: 55/(x + 6) = x",
+          "answerFormat": "numeric",
+          "correctAnswer": "5"
+        },
+        {
+          "id": 8,
+          "text": "At a speed of 12 cm/s, how long will it take to travel 108 cm?",
+          "options": ["9", "96", "120", "972"],
+          "correctAnswer": "9"
+        },
+        {
+          "id": 9,
+          "text": "Which statement correctly compares the mean of data set X and the mean of data set Y?",
+          "options": [
+            "The mean of data set X is greater than the mean of data set Y.",
+            "The mean of data set X is less than the mean of data set Y.",
+            "The means of data set X and data set Y are equal.",
+            "There is not enough information to compare the means."
+          ],
+          "correctAnswer": "The mean of data set X is less than the mean of data set Y."
+        },
+        {
+          "id": 10,
+          "text": "On average, how much propellant did the rocket burn each second after launch?",
+          "options": ["4,995", "17,243", "39,481", "104,895"],
+          "correctAnswer": "4,995"
+        },
+        {
+          "id": 11,
+          "text": "If 4 + x^2 = 12, what is the value of 16x + 8?",
+          "options": ["40", "48", "56", "60"],
+          "correctAnswer": "48"
+        },
+        {
+          "id": 12,
+          "text": "What was the height, in meters, from which the object was kicked?",
+          "options": ["0", "4.9", "7", "9"],
+          "correctAnswer": "9"
+        },
+        {
+          "id": 13,
+          "text": "For what value of x does f(x) = 4x^2 - 50x + 126 reach its minimum?",
+          "answerFormat": "numeric",
+          "correctAnswer": "6.25"
+        },
+        {
+          "id": 14,
+          "text": "What is the maximum number of large candles the owner can purchase to stay within the budget?",
+          "answerFormat": "numeric",
+          "correctAnswer": "55"
+        },
+        {
+          "id": 15,
+          "text": "Which equation defines the linear function f?",
+          "options": ["f(x) = 12x + 8", "f(x) = 4x", "f(x) = 4x + 12", "f(x) = 4x + 8"],
+          "correctAnswer": "f(x) = 4x + 8"
+        },
+        {
+          "id": 16,
+          "text": "What is the length of arc QR?",
+          "options": ["24π", "48π", "72π", "96π"],
+          "correctAnswer": "48π"
+        }
+      ],
+      "english": [
+        {
+          "id": 1,
+          "text": "Which choice completes the text with the most logical and precise word or phrase? Benito Juarez became one of the most ______ figures in his country’s history.",
+          "options": ["unpredictable", "important", "secretive", "ordinary"],
+          "correctAnswer": "important"
+        },
+        {
+          "id": 2,
+          "text": "Many of John Ashbery’s poems can be quite difficult to ______ and thus are the object of heated debate among scholars.",
+          "options": ["delegate", "compose", "interpret", "renounce"],
+          "correctAnswer": "interpret"
+        },
+        {
+          "id": 3,
+          "text": "This ______ change in the fossil record might be due to a shift in many organisms to body types that were more likely to be preserved.",
+          "options": ["catastrophic", "elusive", "abrupt", "imminent"],
+          "correctAnswer": "abrupt"
+        },
+        {
+          "id": 4,
+          "text": "The accessory spleen may actively support diving mechanisms.",
+          "options": ["replicable", "predetermined", "operative", "latent"],
+          "correctAnswer": "latent"
+        },
+        {
+          "id": 5,
+          "text": "This finding may persuade researchers to ______ that women may have also held leadership roles.",
+          "options": ["waive", "concede", "refute", "require"],
+          "correctAnswer": "concede"
+        },
+        {
+          "id": 6,
+          "text": "Due to their experimental syntax, many poems are ______.",
+          "options": ["inadequate", "resilient", "dynamic", "opaque"],
+          "correctAnswer": "opaque"
+        },
+        {
+          "id": 7,
+          "text": "John Redding’s imagination was ______ compared to others in his town.",
+          "options": ["mundane", "vivid", "unique", "problematic"],
+          "correctAnswer": "unique"
+        },
+        {
+          "id": 8,
+          "text": "Which choice completes the text: Night wears a garment ______?",
+          "options": ["like a cloud", "like a human being", "of stars", "none"],
+          "correctAnswer": "like a human being"
+        },
+        {
+          "id": 9,
+          "text": "Tadpole shrimp ______ for long drought periods.",
+          "options": ["hibernate", "adapt", "pause", "pause development"],
+          "correctAnswer": "pause development"
+        }
+       
+      ]
+    }
   }
