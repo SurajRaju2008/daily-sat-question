@@ -3,55 +3,25 @@
       "math": [
         {
           "id": 1,
-          "text": "For what model year is the percent of cars for sale the smallest?",
-          "options": ["2012", "2013", "2014", "2015"],
-          "correctAnswer": "2014"
-        },
-        {
-          "id": 2,
-          "text": "What is the probability of selecting a bead that has a defect?",
+          "text": "A bead produced by a machine will be selected at random. If 29 out of every 100 beads have a defect, what is the probability of selecting a bead that has a defect?",
           "options": ["1/2900", "1/29", "29/100", "29/10"],
           "correctAnswer": "29/100"
         },
         {
-          "id": 3,
-          "text": "In the figure, line m is parallel to line n, and line t intersects both lines. What is the value of x?",
-          "options": ["33", "57", "123", "147"],
-          "correctAnswer": "57"
-        },
-        {
-          "id": 4,
-          "text": "What is the y-intercept of the graph shown?",
-          "options": ["(-8, 0)", "(-6, 0)", "(0, 6)", "(0, 8)"],
-          "correctAnswer": "(0, 6)"
-        },
-        {
-          "id": 5,
-          "text": "What is the total cost to lease a car when the monthly payment is $400?",
-          "options": ["$13,400", "$13,000", "$15,400", "$37,400"],
-          "correctAnswer": "$15,400"
-        },
-        {
-          "id": 6,
-          "text": "Each side of a square has a length of 45. What is the perimeter of this square?",
+          "id": 2,
+          "text": "Each side of a square has a length of 45. What is the perimeter of the square?",
           "answerFormat": "numeric",
           "correctAnswer": "180"
         },
         {
-          "id": 7,
-          "text": "Solve: 55/(x + 6) = x",
-          "answerFormat": "numeric",
-          "correctAnswer": "5"
-        },
-        {
-          "id": 8,
-          "text": "At a speed of 12 cm/s, how long will it take to travel 108 cm?",
+          "id": 3,
+          "text": "An object travels at a constant speed of 12 centimeters per second. How long will it take for the object to travel 108 centimeters?",
           "options": ["9", "96", "120", "972"],
           "correctAnswer": "9"
         },
         {
-          "id": 9,
-          "text": "Which statement correctly compares the mean of data set X and the mean of data set Y?",
+          "id": 4,
+          "text": "Data set X: 5, 9, 9, 13; Data set Y: 5, 9, 9, 13, 27. Which statement correctly compares the mean of data set X and data set Y?",
           "options": [
             "The mean of data set X is greater than the mean of data set Y.",
             "The mean of data set X is less than the mean of data set Y.",
@@ -61,104 +31,134 @@
           "correctAnswer": "The mean of data set X is less than the mean of data set Y."
         },
         {
-          "id": 10,
-          "text": "On average, how much propellant did the rocket burn each second after launch?",
-          "options": ["4,995", "17,243", "39,481", "104,895"],
-          "correctAnswer": "4,995"
-        },
-        {
-          "id": 11,
+          "id": 5,
           "text": "If 4 + x^2 = 12, what is the value of 16x + 8?",
           "options": ["40", "48", "56", "60"],
           "correctAnswer": "48"
         },
         {
+          "id": 6,
+          "text": "The total cost to lease a car is represented by f(x) = 36x + 1000. What is the total cost when the monthly payment is $400?",
+          "options": ["$13,400", "$13,000", "$15,400", "$37,400"],
+          "correctAnswer": "$15,400"
+        },
+        {
+          "id": 7,
+          "text": "What is the maximum number of large candles the owner can purchase with a $2,200 budget if each costs $11.60, while maintaining a minimum purchase of 200 candles?",
+          "answerFormat": "numeric",
+          "correctAnswer": "55"
+        },
+        {
+          "id": 8,
+          "text": "In a rocket launch, 467,000 kg of propellant was present initially, and 362,105 kg remained after 21 seconds. On average, how much propellant was burned per second?",
+          "options": ["4,995", "17,243", "39,481", "104,895"],
+          "correctAnswer": "4,995"
+        },
+        {
+          "id": 9,
+          "text": "What is the width of a rectangle with an area of 1,176 ft² if the length is 6 times the width?",
+          "answerFormat": "numeric",
+          "correctAnswer": "14"
+        },
+        {
+          "id": 10,
+          "text": "In a group of 21 people, the company’s revenue is $80 per adult and $60 per child. If the total revenue was $1,440, how many children were in the group?",
+          "options": ["3", "9", "12", "18"],
+          "correctAnswer": "9"
+        },
+        {
+          "id": 11,
+          "text": "If f(x) = 4x² - 50x + 126, for what value of x does f(x) reach its minimum?",
+          "answerFormat": "numeric",
+          "correctAnswer": "6.25"
+        },
+        {
           "id": 12,
-          "text": "What was the height, in meters, from which the object was kicked?",
+          "text": "What is the height from which an object was kicked if h(t) = -4.9t² + 7t + 9 represents its motion?",
           "options": ["0", "4.9", "7", "9"],
           "correctAnswer": "9"
         },
         {
           "id": 13,
-          "text": "For what value of x does f(x) = 4x^2 - 50x + 126 reach its minimum?",
+          "text": "Solve for x: 55 / (x + 6) = x.",
           "answerFormat": "numeric",
-          "correctAnswer": "6.25"
+          "correctAnswer": "5"
         },
         {
           "id": 14,
-          "text": "What is the maximum number of large candles the owner can purchase to stay within the budget?",
-          "answerFormat": "numeric",
-          "correctAnswer": "55"
+          "text": "What is the y-intercept of the graph given by f(x) = -2x + 6?",
+          "options": ["-6", "0", "6", "12"],
+          "correctAnswer": "6"
         },
         {
           "id": 15,
-          "text": "Which equation defines the linear function f?",
-          "options": ["f(x) = 12x + 8", "f(x) = 4x", "f(x) = 4x + 12", "f(x) = 4x + 8"],
-          "correctAnswer": "f(x) = 4x + 8"
+          "text": "If a circle has a circumference of 144π, what is the length of an arc subtended by a 90° angle?",
+          "options": ["36π", "48π", "72π", "144π"],
+          "correctAnswer": "36π"
         },
         {
           "id": 16,
-          "text": "What is the length of arc QR?",
-          "options": ["24π", "48π", "72π", "96π"],
-          "correctAnswer": "48π"
+          "text": "If f(0) = 8 and f(1) = 12, which equation represents the linear function f?",
+          "options": ["f(x) = 12x + 8", "f(x) = 4x + 12", "f(x) = 4x + 8", "f(x) = 8x + 4"],
+          "correctAnswer": "f(x) = 4x + 8"
         }
       ],
       "english": [
         {
           "id": 1,
-          "text": "Which choice completes the text with the most logical and precise word or phrase? Benito Juarez became one of the most ______ figures in his country’s history.",
+          "text": "Benito Juarez became one of the most ______ figures in his country’s history.",
           "options": ["unpredictable", "important", "secretive", "ordinary"],
           "correctAnswer": "important"
         },
         {
           "id": 2,
-          "text": "Many of John Ashbery’s poems can be quite difficult to ______ and thus are the object of heated debate among scholars.",
+          "text": "Due to their often strange images and syntax, John Ashbery's poems are difficult to ______.",
           "options": ["delegate", "compose", "interpret", "renounce"],
           "correctAnswer": "interpret"
         },
         {
           "id": 3,
-          "text": "This ______ change in the fossil record might be due to a shift in many organisms to body types that were more likely to be preserved.",
+          "text": "Some scientists argue that the ______ change in the fossil record was caused by body types more likely to be preserved.",
           "options": ["catastrophic", "elusive", "abrupt", "imminent"],
           "correctAnswer": "abrupt"
         },
         {
           "id": 4,
-          "text": "The accessory spleen may actively support diving mechanisms.",
+          "text": "Given its prevalence, the accessory spleen may actively support diving mechanisms.",
           "options": ["replicable", "predetermined", "operative", "latent"],
           "correctAnswer": "latent"
         },
         {
           "id": 5,
-          "text": "This finding may persuade researchers to ______ that women may have also held leadership roles.",
+          "text": "Research findings may persuade scholars to ______ that women held leadership roles in the Bronze Age.",
           "options": ["waive", "concede", "refute", "require"],
           "correctAnswer": "concede"
         },
         {
           "id": 6,
-          "text": "Due to their experimental syntax, many poems are ______.",
-          "options": ["inadequate", "resilient", "dynamic", "opaque"],
-          "correctAnswer": "opaque"
+          "text": "Many people ______ use bottle gourds as containers.",
+          "options": ["to use", "have used", "using", "used"],
+          "correctAnswer": "have used"
         },
         {
           "id": 7,
-          "text": "John Redding’s imagination was ______ compared to others in his town.",
-          "options": ["mundane", "vivid", "unique", "problematic"],
-          "correctAnswer": "unique"
+          "text": "The process of mechanical recycling is often considered ______.",
+          "options": ["resilient", "inadequate", "dynamic", "satisfactory"],
+          "correctAnswer": "inadequate"
         },
         {
           "id": 8,
-          "text": "Which choice completes the text: Night wears a garment ______?",
-          "options": ["like a cloud", "like a human being", "of stars", "none"],
-          "correctAnswer": "like a human being"
+          "text": "Night wears a garment all velvet soft, all violet blue...",
+          "options": ["describing the sky", "depicting emotions", "comparing night to a person", "illustrating a city scene"],
+          "correctAnswer": "comparing night to a person"
         },
         {
           "id": 9,
-          "text": "Tadpole shrimp ______ for long drought periods.",
-          "options": ["hibernate", "adapt", "pause", "pause development"],
-          "correctAnswer": "pause development"
+          "text": "The studies suggest that Mexican American women ______ during World War II.",
+          "options": ["influenced quotas", "asserted agency", "changed manufacturing", "focused on benefits"],
+          "correctAnswer": "asserted agency"
         }
-       
+        
       ]
     }
   }
