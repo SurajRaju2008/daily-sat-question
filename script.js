@@ -1,11 +1,14 @@
+let selectedAnswer = null;
+let currentQuestion = null;
+
 fetch('questions.json')
   .then(response => response.json()) // Parse the JSON response
   .then(data => { // Handle the entire question data
     const today = new Date().getDate(); // Get today's day (1-31)
-    const todaysQuestion = data.questions.find(q => q.id == today); // Find the question for today by ID
+    currentQuestion = data.questions.find(q => q.id == today); // Find the question for today by ID
 
-    if (todaysQuestion) {
-      displayQuestion(todaysQuestion); // Display the question if found
+    if (currentQuestion) {
+      displayQuestion(currentQuestion); // Display the question if found
     } else {
       document.getElementById('question').innerHTML = "No question available for today."; // If question is not found
     }
@@ -19,15 +22,27 @@ function displayQuestion(question) {
   if (question.options) {
     for (let i = 0; i < question.options.length; i++) {
       const option = question.options[i];
-      optionsHTML.push(`<li><button>${option}</button></li>`);
+      optionsHTML.push(`<button onclick="selectAnswer('${option}')">${option}</button>`);
     }
-    document.getElementById.('button').innerHTML = '<li><button onclick = "checkAnswer(\'' + option + '\', \'' + question.correctAnswer + '\')">' + checkAnswer + '</button></li>';
   }
 
   // Set the inner HTML of the question container
   questionContainer.innerHTML = `
     <p>${question.text}</p>
     <ul>${optionsHTML.join('')}</ul>`;
+
+    document.getElementById('button').innerHTML = '';
+
+  // Update the button only after an answer is selected
+  if (selectedAnswer) {
+    document.getElementById('button').innerHTML = `<button onclick="checkAnswer('${selectedAnswer}', '${question.correctAnswer}')">Check Answer</button>`;
+  }
+}
+
+//stores selected answer
+function selectAnswer(option){
+  selectedAnswer = option;
+  displayQuestion(currentQuestion);
 }
 
 function checkAnswer(selected, correctAnswer) {
