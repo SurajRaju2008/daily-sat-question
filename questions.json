@@ -3,6 +3,7 @@
       "math": [
         {
           "id": 1,
+          "date": "2025-01-01",
           "text": "A bead produced by a machine will be selected at random. If 29 out of every 100 beads have a defect, what is the probability of selecting a bead that has a defect?",
           "options": ["1/2900", "1/29", "29/100", "29/10"],
           "correctAnswer": "29/100"
