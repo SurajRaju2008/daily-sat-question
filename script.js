@@ -31,7 +31,7 @@ function displayQuestion(question) {
     <p>${question.text}</p>
     <ul>${optionsHTML.join('')}</ul>`;
 
-    document.getElementById('button').innerHTML = '';
+  document.getElementById('button').innerHTML = '';
 
   // Update the button only after an answer is selected
   if (selectedAnswer) {
@@ -39,17 +39,30 @@ function displayQuestion(question) {
   }
 }
 
-//stores selected answer
-function selectAnswer(option){
+// Store selected answer
+function selectAnswer(option) {
   selectedAnswer = option;
   displayQuestion(currentQuestion);
 }
 
-function checkAnswer(selected, correctAnswer) {
+
+function displayExplation(isCorrect) {
   const resultContainer = document.getElementById('result');
-  if (selected == correctAnswer) {
-    resultContainer.innerHTML = "Correct!";
-  } else {
-    resultContainer.innerHTML = "Incorrect! The correct answer is: " + correctAnswer;
-  }
+  const resultMessage = isCorrect ? "Correct!" : `Incorrect! The correct answer is: ${currentQuestion.correctAnswer}`;
+  document.getElementById('popup-text').innerHTML = resultMessage;
+  document.getElementById('popup').classList.add('show');
+  document.getElementById('popup-buttons').innerHTML = `<button onclick="showExplanation()">Show Explanation</button>`;
+  document.getElementById('popup-explanation').innerHTML = ''; 
+}
+
+
+function showExplanation() {
+ 
+  document.getElementById('popup-explanation').innerHTML = currentQuestion.explanation;
+}
+
+
+function checkAnswer(selected, correctAnswer) {
+  const isCorrect = selected == correctAnswer;
+  displayExplation(isCorrect);
 }

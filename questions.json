@@ -4,19 +4,22 @@
       "id": 1,
       "text": "A bead produced by a machine will be selected at random. If 29 out of every 100 beads have a defect, what is the probability of selecting a bead that has a defect?",
       "options": ["1/2900", "1/29", "29/100", "29/10"],
-      "correctAnswer": "29/100"
+      "correctAnswer": "29/100",
+      "explanation": "Probability is calculated by dividing the number of defective beads by the total number of beads. Here, it is 29/100."
     },
     {
       "id": 2,
       "text": "Each side of a square has a length of 45. What is the perimeter of the square?",
       "options": ["9", "96", "180", "972"],
-      "correctAnswer": "180"
+      "correctAnswer": "180",
+      "explanation": "The perimeter of a square is 4 times the length of one side. So, 4 * 45 = 180."
     },
     {
       "id": 3,
       "text": "An object travels at a constant speed of 12 centimeters per second. How long will it take for the object to travel 108 centimeters?",
       "options": ["9", "96", "120", "972"],
-      "correctAnswer": "9"
+      "correctAnswer": "9",
+      "explanation": "Time is calculated by dividing the distance by the speed. Thus, 108 / 12 = 9 seconds."
     },
     {
       "id": 4,
@@ -27,133 +30,155 @@
         "The means of data set X and data set Y are equal.",
         "There is not enough information to compare the means."
       ],
-      "correctAnswer": "The mean of data set X is less than the mean of data set Y."
+      "correctAnswer": "The mean of data set X is less than the mean of data set Y.",
+      "explanation": "The mean of a data set is the sum of its elements divided by the number of elements. Adding 27 to data set Y increases its mean."
     },
     {
       "id": 5,
       "text": "If 4 + x^2 = 12, what is the value of 16x + 8?",
       "options": ["40", "48", "56", "60"],
-      "correctAnswer": "48"
+      "correctAnswer": "48",
+      "explanation": "Solving 4 + x^2 = 12 gives x^2 = 8, so x = \u00b12. Plugging x = 2 into 16x + 8 gives 16 * 2 + 8 = 48."
     },
     {
       "id": 6,
       "text": "The total cost to lease a car is represented by f(x) = 36x + 1000. What is the total cost when the monthly payment is $400?",
       "options": ["$13,400", "$13,000", "$15,400", "$37,400"],
-      "correctAnswer": "$15,400"
+      "correctAnswer": "$15,400",
+      "explanation": "Substitute x = 400 into f(x) = 36x + 1000: 36 * 400 + 1000 = 14,400 + 1000 = $15,400."
     },
     {
       "id": 7,
       "text": "What is the maximum number of large candles the owner can purchase with a $2,200 budget if each costs $11.60, while maintaining a minimum purchase of 200 candles?",
       "answerFormat": "numeric",
-      "correctAnswer": "55"
+      "correctAnswer": "55",
+      "explanation": "The maximum number of candles is calculated by dividing the budget by the price per candle: 2200 / 11.60 \u2248 189.66. However, since 200 candles are required, the budget is insufficient. Thus, only 55 can be bought."
     },
     {
       "id": 8,
       "text": "In a rocket launch, 467,000 kg of propellant was present initially, and 362,105 kg remained after 21 seconds. On average, how much propellant was burned per second?",
       "options": ["4,995", "17,243", "39,481", "104,895"],
-      "correctAnswer": "4,995"
+      "correctAnswer": "4,995",
+      "explanation": "The total propellant burned is 467,000 - 362,105 = 104,895 kg. Dividing this by 21 seconds gives 104,895 / 21 \u2248 4,995 kg/s."
     },
     {
       "id": 9,
-      "text": "What is the width of a rectangle with an area of 1,176 ft² if the length is 6 times the width?",
+      "text": "What is the width of a rectangle with an area of 1,176 ft\u00b2 if the length is 6 times the width?",
       "answerFormat": "numeric",
-      "correctAnswer": "14"
+      "correctAnswer": "14",
+      "explanation": "Let width = w. Then length = 6w. Area = length * width = 6w * w = 6w^2 = 1,176. Solving for w gives w = 14."
     },
     {
       "id": 10,
-      "text": "In a group of 21 people, the company’s revenue is $80 per adult and $60 per child. If the total revenue was $1,440, how many children were in the group?",
+      "text": "In a group of 21 people, the company\u2019s revenue is $80 per adult and $60 per child. If the total revenue was $1,440, how many children were in the group?",
       "options": ["3", "9", "12", "18"],
-      "correctAnswer": "9"
+      "correctAnswer": "9",
+      "explanation": "Let x be the number of children. Then 21 - x is the number of adults. The equation is 80(21 - x) + 60x = 1,440. Solving for x gives x = 9."
     },
     {
       "id": 11,
-      "text": "If f(x) = 4x² - 50x + 126, for what value of x does f(x) reach its minimum?",
+      "text": "If f(x) = 4x\u00b2 - 50x + 126, for what value of x does f(x) reach its minimum?",
       "answerFormat": "numeric",
-      "correctAnswer": "6.25"
+      "correctAnswer": "6.25",
+      "explanation": "The minimum value of a quadratic function ax^2 + bx + c occurs at x = -b / (2a). Here, a = 4, b = -50, so x = 50 / (2 * 4) = 6.25."
     },
     {
       "id": 12,
-      "text": "What is the height from which an object was kicked if h(t) = -4.9t² + 7t + 9 represents its motion?",
+      "text": "What is the height from which an object was kicked if h(t) = -4.9t\u00b2 + 7t + 9 represents its motion?",
       "options": ["0", "4.9", "7", "9"],
-      "correctAnswer": "9"
+      "correctAnswer": "9",
+      "explanation": "The height from which the object was kicked is given by the constant term in the equation, which is 9."
     },
     {
       "id": 13,
       "text": "Solve for x: 55 / (x + 6) = x.",
       "answerFormat": "numeric",
-      "correctAnswer": "5"
+      "correctAnswer": "5",
+      "explanation": "Multiplying both sides by (x + 6) gives 55 = x(x + 6). Solving the quadratic equation x^2 + 6x - 55 = 0 gives x = 5."
     },
     {
       "id": 14,
       "text": "What is the y-intercept of the graph given by f(x) = -2x + 6?",
       "options": ["-6", "0", "6", "12"],
-      "correctAnswer": "6"
+      "correctAnswer": "6",
+      "explanation": "The y-intercept of a linear function f(x) = mx + b is the constant term b. Here, b = 6."
     },
     {
       "id": 15,
-      "text": "If a circle has a circumference of 144π, what is the length of an arc subtended by a 90° angle?",
-      "options": ["36π", "48π", "72π", "144π"],
-      "correctAnswer": "36π"
+      "text": "If a circle has a circumference of 144\u03c0, what is the length of an arc subtended by a 90\u00b0 angle?",
+      "options": ["36\u03c0", "48\u03c0", "72\u03c0", "144\u03c0"],
+      "correctAnswer": "36\u03c0",
+      "explanation": "An arc subtended by a 90\u00b0 angle represents 1/4 of the circumference. So, 1/4 * 144\u03c0 = 36\u03c0."
     },
     {
       "id": 16,
       "text": "If f(0) = 8 and f(1) = 12, which equation represents the linear function f?",
       "options": ["f(x) = 12x + 8", "f(x) = 4x + 12", "f(x) = 4x + 8", "f(x) = 8x + 4"],
-      "correctAnswer": "f(x) = 4x + 8"
+      "correctAnswer": "f(x) = 4x + 8",
+      "explanation": "The slope is (f(1) - f(0)) / (1 - 0) = (12 - 8) / 1 = 4. The y-intercept is f(0) = 8. So, f(x) = 4x + 8."
     },
     {
       "id": 17,
-      "text": "Benito Juarez became one of the most ______ figures in his country’s history.",
+      "text": "Benito Juarez became one of the most ______ figures in his country\u2019s history.",
       "options": ["unpredictable", "important", "secretive", "ordinary"],
-      "correctAnswer": "important"
+      "correctAnswer": "important",
+      "explanation": "Contextually, Benito Juarez is recognized as an important figure in Mexican history."
     },
     {
       "id": 18,
       "text": "Due to their often strange images and syntax, John Ashbery's poems are difficult to ______.",
       "options": ["delegate", "compose", "interpret", "renounce"],
-      "correctAnswer": "interpret"
+      "correctAnswer": "interpret",
+      "explanation": "The context suggests that the poems' complexity makes them hard to interpret."
     },
     {
       "id": 19,
       "text": "Some scientists argue that the ______ change in the fossil record was caused by body types more likely to be preserved.",
       "options": ["catastrophic", "elusive", "abrupt", "imminent"],
-      "correctAnswer": "abrupt"
+      "correctAnswer": "abrupt",
+      "explanation": "The context implies a sudden change, best described as abrupt."
     },
     {
       "id": 20,
       "text": "Given its prevalence, the accessory spleen may actively support diving mechanisms.",
       "options": ["replicable", "predetermined", "operative", "latent"],
-      "correctAnswer": "latent"
+      "correctAnswer": "latent",
+      "explanation": "The word latent fits the context, suggesting the spleen\u2019s hidden or dormant potential in diving mechanisms."
     },
     {
       "id": 21,
       "text": "Research findings may persuade scholars to ______ that women held leadership roles in the Bronze Age.",
       "options": ["waive", "concede", "refute", "require"],
-      "correctAnswer": "concede"
+      "correctAnswer": "concede",
+      "explanation": "Scholars might concede (admit) based on evidence that women held leadership roles."
     },
     {
       "id": 22,
       "text": "Many people ______ use bottle gourds as containers.",
       "options": ["to use", "have used", "using", "used"],
-      "correctAnswer": "have used"
+      "correctAnswer": "have used",
+      "explanation": "The present perfect tense \"have used\" indicates that using bottle gourds has been a common practice over time."
     },
     {
       "id": 23,
       "text": "The process of mechanical recycling is often considered ______.",
       "options": ["resilient", "inadequate", "dynamic", "satisfactory"],
-      "correctAnswer": "inadequate"
+      "correctAnswer": "inadequate",
+      "explanation": "Mechanical recycling is often viewed as insufficient or inadequate for solving all recycling needs."
     },
     {
       "id": 24,
       "text": "Night wears a garment all velvet soft, all violet blue...",
       "options": ["describing the sky", "depicting emotions", "comparing night to a person", "illustrating a city scene"],
-      "correctAnswer": "comparing night to a person"
+      "correctAnswer": "comparing night to a person",
+      "explanation": "The text uses personification, comparing night to a person wearing a garment."
     },
     {
       "id": 25,
       "text": "The studies suggest that Mexican American women ______ during World War II.",
       "options": ["influenced quotas", "asserted agency", "changed manufacturing", "focused on benefits"],
-      "correctAnswer": "asserted agency"
+      "correctAnswer": "asserted agency",
+      "explanation": "The studies imply that Mexican American women took active roles, asserting their agency during World War II."
     }
   ]
 }

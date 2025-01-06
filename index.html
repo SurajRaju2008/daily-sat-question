@@ -3,11 +3,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    * {
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
 
     body {
       font-family: 'Arial', sans-serif;
@@ -22,6 +23,7 @@
       overflow: hidden;
     }
 
+
     h1 {
       font-size: 3rem;
       text-align: center;
@@ -31,6 +33,7 @@
       color: #ecf0f1;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
+
 
     #question {
       font-size: 1.5rem;
@@ -47,9 +50,11 @@
       color: #fff;
     }
 
+
     #question:hover {
       transform: translateY(0);
     }
+
 
     #result {
       font-size: 1.2rem;
@@ -66,6 +71,7 @@
       color: #fff;
     }
 
+
     button {
       background-color: #4CAF50;
       border: none;
@@ -79,14 +85,17 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
 
+
     button:hover {
       background-color: #45a049;
       transform: scale(1.05);
     }
 
+
     button:active {
       background-color: #388e3c;
     }
+
 
     .options {
       display: flex;
@@ -95,6 +104,7 @@
       gap: 15px;
       margin-top: 20px;
     }
+
 
     .options button {
       width: 120px;
@@ -105,10 +115,12 @@
       transition: all 0.3s ease;
     }
 
+
     .options button:hover {
       background-color: #27ae60;
       transform: scale(1.1);
     }
+
 
     .options button:active {
       background-color: #1e8449;
@@ -116,8 +128,52 @@
 
 
     .feedback-visible {
-      opacity: 1 !important; 
+      opacity: 1 !important;
     }
+
+
+    /* Popup Styles */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      max-width: 500px;
+      padding: 25px;
+      background-color: white;
+      color: #333;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      z-index: 1000;
+      opacity: 0;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+
+    .popup p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+
+   
+    .popup.show {
+      display: block;
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.05);
+    }
+
+
+   
+    .popup.show {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+
+
 
   </style>
   <title>Daily SAT Question</title>
@@ -126,7 +182,12 @@
   <h1>Daily SAT Practice</h1>
   <div id="question">Loading...</div>
   <div id="button"></div>
-  <div id="result" class="feedback-visible"></div>
+
+  <div class="popup" id="popup">
+    <p id="popup-text"></p>
+    <div id="popup-buttons"></div>
+    <div id="popup-explanation"></div> <!-- This is where the explanation will show -->
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
