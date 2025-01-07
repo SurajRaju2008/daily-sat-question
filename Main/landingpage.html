@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    body { font-family: 'Arial', sans-serif; background-color: #f7f7f7; color: #333; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; } h1 { font-size: 2.5rem; margin-bottom: 20px; } .container { text-align: center; background-color: #ffffff; padding: 30px 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 90%; max-width: 500px; } button { background-color: #6aaa64; /* Wordle green */ color: #ffffff; border: none; border-radius: 5px; padding: 15px 25px; font-size: 1rem; font-weight: bold; cursor: pointer; margin: 10px 5px; transition: background-color 0.3s ease; } button:hover { background-color: #5d9955; } button:active { background-color: #538d4e; } #loginButton { background-color: #c9c9c9; /* Gray color for login */ } #loginButton:hover { background-color: #b9b9b9; } #loginButton:active { background-color: #a9a9a9; }
+
+  </style>
+</head>
+<body>
+  <script>
+    function switchPage(url) {
+      window.location.href = url;
+    }
+  </script>
+  <div class="container">
+    <h1>Welcome to SAT Practice</h1>
+    <button id="loginButton">Login</button> <!-- Placeholder Login Button -->
+    <button onclick="switchPage('index.html')">Play</button> <!-- Redirect to index.html -->
+  </div>
+</body>
+</html>

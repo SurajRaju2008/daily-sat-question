@@ -49,20 +49,30 @@ function selectAnswer(option) {
 function displayExplation(isCorrect) {
   const resultContainer = document.getElementById('result');
   const resultMessage = isCorrect ? "Correct!" : `Incorrect! The correct answer is: ${currentQuestion.correctAnswer}`;
-  document.getElementById('popup-text').innerHTML = resultMessage;
-  document.getElementById('popup').classList.add('show');
+  document.getElementById('displayInfo').innerHTML = resultMessage;
+  document.getElementById('container').classList.add('show');
   document.getElementById('popup-buttons').innerHTML = `<button onclick="showExplanation()">Show Explanation</button>`;
   document.getElementById('popup-explanation').innerHTML = ''; 
 }
 
 
 function showExplanation() {
- 
   document.getElementById('popup-explanation').innerHTML = currentQuestion.explanation;
 }
 
 
 function checkAnswer(selected, correctAnswer) {
-  const isCorrect = selected == correctAnswer;
-  displayExplation(isCorrect);
+  const isCorrect = selected === correctAnswer;
+  const result = {
+      correct: isCorrect,
+      correctAnswer: correctAnswer,
+      explanation: currentQuestion.explanation
+  };
+  
+  // Store the result in sessionStorage
+  sessionStorage.setItem('result', JSON.stringify(result));
+  
+  // Redirect to displayAnswer.html
+  window.location.href = 'displayAnswer.html';
 }
+

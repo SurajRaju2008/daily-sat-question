@@ -132,15 +132,14 @@
     }
 
 
-    /* Popup Styles */
     .popup {
+      height: max-content;
+      width: max-content;
       display: none;
       position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 80%;
-      max-width: 500px;
       padding: 25px;
       background-color: white;
       color: #333;
@@ -154,7 +153,7 @@
 
 
     .popup p {
-      font-size: 1.2rem;
+      font-size: 3.3rem;
       margin-bottom: 20px;
     }
 
@@ -163,7 +162,7 @@
     .popup.show {
       display: block;
       opacity: 1;
-      transform: translate(-50%, -50%) scale(1.05);
+      transform: translate(-50%, -50%) scale(1);
     }
 
 
@@ -171,10 +170,6 @@
     .popup.show {
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
   </style>
   <title>Daily SAT Question</title>
 </head>
@@ -182,13 +177,6 @@
   <h1>Daily SAT Practice</h1>
   <div id="question">Loading...</div>
   <div id="button"></div>
-
-  <div class="popup" id="popup">
-    <p id="popup-text"></p>
-    <div id="popup-buttons"></div>
-    <div id="popup-explanation"></div> <!-- This is where the explanation will show -->
-  </div>
   <script src="script.js"></script>
-  <script type="module" src="register.js" defer></script>
 </body>
 </html>
