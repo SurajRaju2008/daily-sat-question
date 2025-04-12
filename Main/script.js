@@ -1,18 +1,56 @@
 let selectedAnswer = null;
 let currentQuestion = null;
+const questionContainer = document.getElementById("question");
+const btn = document.getElementById("button");
+const url = "https://opentdb.com/api.php?amount=1&category=19&type=multiple"; // Fetch 1 multiple-choice question
 
-fetch('questions.json')
-  .then(response => response.json()) // Parse the JSON response
-  .then(data => { // Handle the entire question data
-    const today = new Date().getDate(); // Get today's day (1-31)
-    currentQuestion = data.questions.find(q => q.id == today); // Find the question for today by ID
+// Fetch question from the Open Trivia Database API
+let getQuestion = async () => {
+  questionContainer.classList.remove("fade");
 
-    if (currentQuestion) {
-      displayQuestion(currentQuestion); // Display the question if found
-    } else {
-      document.getElementById('question').innerHTML = "No question available for today."; // If question is not found
-    }
-  });
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    const item = data.results[0]; // Assuming the API returns an array of questions
+
+    currentQuestion = {
+      text: item.question,
+      options: [...item.incorrect_answers, item.correct_answer].sort(() => Math.random() - 0.5), // Shuffle options
+      correctAnswer: item.correct_answer,
+      explanation: "No explanation available", // Placeholder explanation
+    };
+
+    // Store the question and today's date in localStorage
+    localStorage.setItem("storedDate", today); // Store today's date
+    localStorage.setItem("storedQuestion", JSON.stringify(currentQuestion)); // Store the question
+
+    displayQuestion(currentQuestion); // Display the new question
+  } catch (error) {
+    console.error("Error fetching question:", error);
+    questionContainer.innerHTML = "Sorry, there was an error fetching the question.";
+  }
+};
+
+// Get today's date as a string (e.g., "2025-04-12")
+const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD format
+
+// Retrieve stored date and question from localStorage
+const storedDate = localStorage.getItem("storedDate");
+const storedQuestion = localStorage.getItem("storedQuestion");
+
+// If the question is already stored for today, use it
+if (storedDate === today) {
+  currentQuestion = JSON.parse(storedQuestion);
+  displayQuestion(currentQuestion); // Display the stored question
+} else {
+  // If it's a new day, fetch a new question
+  getQuestion();
+}
+
+
+
+
+
 
 function displayQuestion(question) {
   const questionContainer = document.getElementById('question');
