@@ -123,6 +123,3 @@ function closePopup() {
   document.getElementById("howToPlayPopup").classList.remove("show");
 }
 
-function closePopup() {
-  document.getElementById("howToPlayPopup").classList.remove("show");
-}
