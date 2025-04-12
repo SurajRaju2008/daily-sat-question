@@ -80,7 +80,7 @@
     <div id="resultMessage" class="message"></div>
    
     <div class="button-group">
-        <button class="button" onclick="goBack()">Back to Question</button>
+        <button class="button" onclick="goBack()">Back to Home</button>
     </div>
 </div>
 
@@ -88,13 +88,13 @@
     const result = JSON.parse(sessionStorage.getItem('result'));
 
     document.getElementById('resultMessage').innerText = result.correct ? 
-        "Correct!" : 
-        `Incorrect! The correct answer is: ${result.correctAnswer}`;
+        "You got it right! 🎉" : 
+        `Oops! That's incorrect. 😔<br> The correct answer is: ${result.correctAnswer}`;
 
     document.getElementById('explanation').innerText = result.explanation;
 
     function goBack() {
-        window.location.href = 'index.html'; // Change to your question page
+        window.location.href = 'landingpage.html'; // Change to your question page
     }
 </script>
 
