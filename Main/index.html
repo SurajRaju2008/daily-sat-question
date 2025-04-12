@@ -1,14 +1,15 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily SAT Question</title>
   <style>
-* {
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
 
     body {
       font-family: 'Arial', sans-serif;
@@ -72,6 +73,65 @@
       background-color: #f0f0f0;
     }
 
+    .profile-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .profile-pic {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: #ecf0f1;
+      border: 2px solid #fff;
+      cursor: pointer;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #2c3e50;
+      font-weight: bold;
+      font-size: 1.2rem;
+      user-select: none;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #fff;
+      color: #333;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: none;
+      min-width: 160px;
+      z-index: 999;
+    }
+
+    .dropdown-menu div {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .dropdown-menu div#dropdown-username {
+      font-weight: bold;
+    }
+
+    .dropdown-menu button {
+      width: 100%;
+      padding: 10px;
+      background: none;
+      border: none;
+      text-align: left;
+      font-size: 1rem;
+      cursor: pointer;
+      color: black;
+    }
+
+    .dropdown-menu button:hover {
+      background-color: #f0f0f0;
+    }
 
     h1 {
       font-size: 3rem;
@@ -82,6 +142,8 @@
       color: #ecf0f1;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
+<<<<<<< HEAD
+=======
     .content {
       display: flex;
       flex-direction: column;
@@ -90,6 +152,7 @@
       flex: 1;
       width: 100%;
     }
+>>>>>>> 404a7b009079f122b4cf1c01702ae42af9b84ac0
 
     #question {
       font-size: 1.5rem;
@@ -120,7 +183,7 @@
       margin-top: 20px;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      opacity: 0; /* Initially hidden */
+      opacity: 0;
       transition: opacity 0.3s ease-in-out;
       color: #fff;
     }
@@ -200,6 +263,7 @@
       font-size: 3.3rem;
       margin-bottom: 20px;
     }
+
    
     .popup.show {
       display: block;
@@ -224,9 +288,56 @@
     }
     
   </style>
-  <title>Daily SAT Question</title>
 </head>
 <body>
+  <div class="profile-container">
+    <div class="profile-pic" id="profile" onclick="toggleDropdown()"></div>
+    <div class="dropdown-menu" id="dropdown">
+      <div id="dropdown-username"></div>
+      <div id="dropdown-email"></div>
+      <button onclick="viewStats()">View Stats</button>
+    </div>
+  </div>
+
+  <h1>Daily SAT Practice</h1>
+  <div id="question">Loading...</div>
+  <div id="button"></div>
+
+  <script>
+    function toggleDropdown() {
+      const menu = document.getElementById("dropdown");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+
+    function viewStats() {
+      alert("Stats will be displayed here.");
+    }
+
+    window.onload = () => {
+      const profile = document.getElementById("profile");
+      const email = localStorage.getItem("userEmail");
+      const username = localStorage.getItem("username");
+
+      if (email) {
+        const firstLetter = email.trim().charAt(0).toUpperCase();
+        profile.textContent = firstLetter;
+
+        document.getElementById("dropdown-email").textContent = email;
+        document.getElementById("dropdown-username").textContent = username || "User";
+      } else {
+        profile.textContent = "";
+      }
+    };
+
+    window.addEventListener("click", function(e) {
+      const dropdown = document.getElementById("dropdown");
+      const profile = document.getElementById("profile");
+      if (!profile.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.style.display = "none";
+      }
+    });
+  </script>
+
   <div id="howToPlayPopup" class="popup show">
     <span class="close-btn" onclick="closePopup()">✖</span>
     <h2 style="margin-bottom: 10px; font-size: 2rem; ">How To Play</h2>

@@ -1,0 +1,226 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "A coin is flipped 8 times. What is the probability of getting exactly 3 heads?",
+      "options": ["1/128", "1/16", "56/128", "7/128"],
+      "correctAnswer": "56/128",
+      "explanation": "The number of ways to get exactly 3 heads in 8 flips is given by combinations, which is 56. So, the probability is 56/128."
+    },
+    {
+      "id": 2,
+      "text": "A rectangle has a length of 14 and a width of 7. What is its area?",
+      "options": ["14", "21", "28", "98"],
+      "correctAnswer": "98",
+      "explanation": "The area of a rectangle is given by length * width. Thus, 14 * 7 = 98."
+    },
+    {
+      "id": 3,
+      "text": "If a car travels 80 miles per hour for 3.5 hours, how far will it travel?",
+      "options": ["240", "280", "320", "350"],
+      "correctAnswer": "280",
+      "explanation": "Distance is calculated by multiplying speed by time: 80 * 3.5 = 280 miles."
+    },
+    {
+      "id": 4,
+      "text": "The mean of a data set is 15. If the sum of the data set is 60, how many elements are in the data set?",
+      "options": ["3", "4", "5", "6"],
+      "correctAnswer": "4",
+      "explanation": "The mean is calculated by dividing the sum by the number of elements. So, 60 / 15 = 4."
+    },
+    {
+      "id": 5,
+      "text": "Solve for x: 3x - 7 = 14.",
+      "answerFormat": "numeric",
+      "correctAnswer": "7",
+      "explanation": "Adding 7 to both sides gives 3x = 21. Then, dividing both sides by 3 gives x = 7."
+    },
+    {
+      "id": 6,
+      "text": "The total cost of a service is represented by f(x) = 50x + 200. What is the total cost when x = 10?",
+      "options": ["700", "800", "900", "1,000"],
+      "correctAnswer": "800",
+      "explanation": "Substituting x = 10 into the equation: f(10) = 50 * 10 + 200 = 800."
+    },
+    {
+      "id": 7,
+      "text": "What is the volume of a cube with a side length of 5 cm?",
+      "options": ["25 cm³", "125 cm³", "50 cm³", "75 cm³"],
+      "correctAnswer": "125 cm³",
+      "explanation": "The volume of a cube is calculated as side³. So, 5³ = 125 cm³."
+    },
+    {
+      "id": 8,
+      "text": "What is the average speed of a vehicle that travels 100 km in 2 hours and 50 km in 1 hour?",
+      "options": ["50 km/h", "60 km/h", "70 km/h", "75 km/h"],
+      "correctAnswer": "60 km/h",
+      "explanation": "The total distance traveled is 100 + 50 = 150 km, and the total time is 2 + 1 = 3 hours. So, the average speed is 150 / 3 = 60 km/h."
+    },
+    {
+      "id": 9,
+      "text": "Solve for x: x² + 5x - 24 = 0.",
+      "answerFormat": "numeric",
+      "correctAnswer": "4",
+      "explanation": "Using the quadratic formula, x = (-5 ± √(25 + 96)) / 2 = (-5 ± √121) / 2 = (-5 ± 11) / 2. So, x = 4 or x = -6."
+    },
+    {
+      "id": 10,
+      "text": "If the sum of two numbers is 25 and their difference is 5, what are the two numbers?",
+      "options": ["10, 15", "12, 13", "13, 12", "15, 10"],
+      "correctAnswer": "15, 10",
+      "explanation": "Let the numbers be x and y. x + y = 25 and x - y = 5. Solving gives x = 15 and y = 10."
+    },
+    {
+      "id": 11,
+      "text": "If a square has a perimeter of 48, what is the length of each side?",
+      "options": ["6", "8", "10", "12"],
+      "correctAnswer": "12",
+      "explanation": "The perimeter of a square is 4 times the length of one side. So, 48 / 4 = 12."
+    },
+    {
+      "id": 12,
+      "text": "If a triangle has side lengths of 5, 12, and 13, what type of triangle is it?",
+      "options": ["Scalene", "Equilateral", "Right-angled", "Isosceles"],
+      "correctAnswer": "Right-angled",
+      "explanation": "A triangle with sides 5, 12, and 13 follows the Pythagorean theorem, so it is a right-angled triangle."
+    },
+    {
+      "id": 13,
+      "text": "Solve for x: 2x + 4 = 18.",
+      "answerFormat": "numeric",
+      "correctAnswer": "7",
+      "explanation": "Subtracting 4 from both sides gives 2x = 14. Then, dividing by 2 gives x = 7."
+    },
+    {
+      "id": 14,
+      "text": "What is the circumference of a circle with a radius of 5 cm?",
+      "options": ["10π", "15π", "20π", "25π"],
+      "correctAnswer": "10π",
+      "explanation": "The circumference of a circle is given by 2πr. Thus, 2π * 5 = 10π."
+    },
+    {
+      "id": 15,
+      "text": "If a book costs $20 and is on sale for 15% off, what is the sale price?",
+      "options": ["$17", "$18", "$19", "$20"],
+      "correctAnswer": "$17",
+      "explanation": "The discount is 15% of $20, or 0.15 * 20 = 3. The sale price is $20 - $3 = $17."
+    },
+    {
+      "id": 16,
+      "text": "A car travels 90 miles in 1.5 hours. What is the car's average speed?",
+      "options": ["50 mph", "55 mph", "60 mph", "65 mph"],
+      "correctAnswer": "60 mph",
+      "explanation": "Average speed is calculated by dividing the distance by the time: 90 / 1.5 = 60 mph."
+    },
+    {
+      "id": 17,
+      "text": "What is the surface area of a cube with side length 4 cm?",
+      "options": ["48 cm²", "64 cm²", "96 cm²", "112 cm²"],
+      "correctAnswer": "96 cm²",
+      "explanation": "The surface area of a cube is 6 times the area of one face: 6 * 4² = 96 cm²."
+    },
+    {
+      "id": 18,
+      "text": "If a train travels 120 miles in 2 hours and 180 miles in 3 hours, what is the average speed?",
+      "options": ["60 mph", "62 mph", "63 mph", "64 mph"],
+      "correctAnswer": "62 mph",
+      "explanation": "The total distance is 120 + 180 = 300 miles, and the total time is 2 + 3 = 5 hours. The average speed is 300 / 5 = 60 mph."
+    },
+    {
+      "id": 19,
+      "text": "What is the solution to the system of equations: x + y = 10 and x - y = 2?",
+      "options": ["(4, 6)", "(5, 5)", "(6, 4)", "(8, 2)"],
+      "correctAnswer": "(6, 4)",
+      "explanation": "Adding the two equations gives 2x = 12, so x = 6. Substituting x = 6 into x + y = 10 gives y = 4."
+    },
+    {
+      "id": 20,
+      "text": "Solve for x: 3x² - 12 = 0.",
+      "answerFormat": "numeric",
+      "correctAnswer": "2",
+      "explanation": "Adding 12 to both sides gives 3x² = 12. Dividing by 3 gives x² = 4, so x = ±2."
+    },
+    {
+      "id": 21,
+      "text": "What is the slope of the line passing through the points (2, 4) and (6, 10)?",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": "1.5",
+      "explanation": "The slope is calculated as (y₂ - y₁) / (x₂ - x₁) = (10 - 4) / (6 - 2) = 6 / 4 = 1.5."
+    },
+    {
+      "id": 22,
+      "text": "Solve for x: 2x + 3y = 12 and 3x - 2y = 6.",
+      "answerFormat": "numeric",
+      "correctAnswer": "x = 3, y = 2",
+      "explanation": "By solving the system of equations, we find x = 3 and y = 2."
+    },
+    {
+      "id": 23,
+      "text": "What is the height of a triangle with base 8 and area 24?",
+      "options": ["2", "3", "4", "6"],
+      "correctAnswer": "6",
+      "explanation": "The area of a triangle is (base * height) / 2. Thus, 24 = 8 * height / 2, so height = 6."
+    },
+    {
+      "id": 24,
+      "text": "What is the perimeter of a triangle with side lengths 5, 12, and 13?",
+      "options": ["30", "32", "34", "36"],
+      "correctAnswer": "30",
+      "explanation": "The perimeter of a triangle is the sum of its sides: 5 + 12 + 13 = 30."
+    },
+    {
+      "id": 25,
+      "text": "If the sum of three consecutive numbers is 18, what are the numbers?",
+      "options": ["5, 6, 7", "6, 7, 8", "7, 8, 9", "8, 9, 10"],
+      "correctAnswer": "5, 6, 7",
+      "explanation": "Let the numbers be x, x + 1, and x + 2. Then, x + (x + 1) + (x + 2) = 18. Solving gives x = 5."
+    },
+    {
+      "id": 26,
+      "text": "What is the probability of rolling a 4 on a fair 6-sided die?",
+      "options": ["1/6", "1/3", "1/2", "1/4"],
+      "correctAnswer": "1/6",
+      "explanation": "There is one 4 on a fair 6-sided die, so the probability is 1/6."
+    },
+    {
+      "id": 27,
+      "text": "Solve for x: 4x + 7 = 19.",
+      "answerFormat": "numeric",
+      "correctAnswer": "3",
+      "explanation": "Subtracting 7 from both sides gives 4x = 12. Then, dividing by 4 gives x = 3."
+    },
+    {
+      "id": 28,
+      "text": "What is the mean of the data set: 3, 5, 7, 9, 11?",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": "7",
+      "explanation": "The mean is calculated by adding all the numbers and dividing by the number of elements: (3 + 5 + 7 + 9 + 11) / 5 = 35 / 5 = 7."
+    },
+    {
+      "id": 29,
+      "text": "If a car's fuel efficiency is 30 miles per gallon, how many gallons of fuel will it use to travel 180 miles?",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": "6",
+      "explanation": "The number of gallons used is calculated by dividing the distance by the fuel efficiency: 180 / 30 = 6."
+    },
+    {
+      "id": 30,
+      "text": "What is the area of a circle with a radius of 4 cm?",
+      "options": ["16π cm²", "32π cm²", "64π cm²", "8π cm²"],
+      "correctAnswer": "16π cm²",
+      "explanation": "The area of a circle is given by πr². Thus, π * 4² = 16π cm²."
+    },
+    {
+      "id": 31,
+      "text": "What is the value of x if x + 3 = 12?",
+      "answerFormat": "numeric",
+      "correctAnswer": "9",
+      "explanation": "Subtracting 3 from both sides gives x = 9."
+    }
+  ]
+}
+
+
+
+
+
