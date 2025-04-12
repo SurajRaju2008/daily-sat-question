@@ -14,15 +14,13 @@
       font-family: 'Arial', sans-serif;
       background: linear-gradient(135deg, #2c3e50, #4c8c8c);
       color: #fff;
+      padding: 40px 20px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
       height: 100vh;
-      flex-direction: column;
-      padding: 20px;
       overflow: hidden;
     }
-
 
     h1 {
       font-size: 3rem;
@@ -33,7 +31,14 @@
       color: #ecf0f1;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
-
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      width: 100%;
+    }
 
     #question {
       font-size: 1.5rem;
@@ -50,11 +55,9 @@
       color: #fff;
     }
 
-
     #question:hover {
       transform: translateY(0);
     }
-
 
     #result {
       font-size: 1.2rem;
@@ -71,7 +74,6 @@
       color: #fff;
     }
 
-
     button {
       background-color: #4CAF50;
       border: none;
@@ -85,17 +87,14 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
 
-
     button:hover {
       background-color: #45a049;
       transform: scale(1.05);
     }
 
-
     button:active {
       background-color: #388e3c;
     }
-
 
     .options {
       display: flex;
@@ -104,7 +103,6 @@
       gap: 15px;
       margin-top: 20px;
     }
-
 
     .options button {
       width: 120px;
@@ -115,22 +113,18 @@
       transition: all 0.3s ease;
     }
 
-
     .options button:hover {
       background-color: #27ae60;
       transform: scale(1.1);
     }
 
-
     .options button:active {
       background-color: #1e8449;
     }
 
-
     .feedback-visible {
       opacity: 1 !important;
     }
-
 
     .popup {
       height: max-content;
@@ -151,21 +145,16 @@
       transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
-
     .popup p {
       font-size: 3.3rem;
       margin-bottom: 20px;
     }
-
-
    
     .popup.show {
       display: block;
       opacity: 1;
       transform: translate(-50%, -50%) scale(1);
     }
-
-
    
     .popup.show {
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -175,8 +164,10 @@
 </head>
 <body>
   <h1>Daily SAT Practice</h1>
-  <div id="question">Loading...</div>
-  <div id="button"></div>
+  <div class="content">
+    <div id="question">Loading...</div>
+    <div id="button"></div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
