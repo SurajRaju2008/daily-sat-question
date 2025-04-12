@@ -89,12 +89,12 @@
 
     document.getElementById('resultMessage').innerText = result.correct ? 
         "You got it right! 🎉" : 
-        `Oops! That's incorrect. 😔<br> The correct answer is: ${result.correctAnswer}`;
+        `Oops! That's incorrect. 😔 The correct answer is: ${result.correctAnswer}`;
 
     document.getElementById('explanation').innerText = result.explanation;
 
     function goBack() {
-        window.location.href = 'landingpage.html'; // Change to your question page
+        window.location.href = 'landingpage.html'; 
     }
 </script>
 
