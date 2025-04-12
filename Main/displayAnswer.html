@@ -6,74 +6,93 @@
     <title>Results</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #2f2f2f;
-            color: white;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-            background-color: #1c1c1c;
-            padding: 20px;
-            border-radius: 10px;
-            width: 300px;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #2c3e50, #4c8c8c);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        padding: 20px;
+        overflow: hidden;
         }
         h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #f5a623;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ecf0f1;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
-        .message {
-            margin: 20px 0;
-            font-size: 1.2em;
+        .form-container {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
         }
-        .explanation {
-            margin-top: 20px;
-            color: #d1d1d1;
+        #explanation, #resultMessage {
+        font-size: 1.5rem;
+        padding: 20px;
+        max-width: 500px;
+        margin-bottom: 20px;
+        text-align: center;
+        transform: translateY(-10px);
+        transition: transform 0.3s ease-in-out;
+        color: #fff;
         }
-        .button {
-            padding: 10px 20px;
-            background-color: #f5a623;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 1em;
-            cursor: pointer;
-            margin-top: 20px;
-            transition: background-color 0.3s;
+
+        button {
+        background-color: #4a8369;
+        border: none;
+        color: white;
+        padding: 15px 20px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        width: 150px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
-        .button:hover {
-            background-color: #d4881e;
+        .button-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; 
+        }
+        button:hover {
+        background-color: #45a072;
+        transform: scale(1.05);
+        }
+        button:active {
+        background-color: #388e3c;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="form-container">
     <h1>Results</h1>
     <div id="resultMessage" class="message"></div>
-    <div id="explanation" class="explanation"></div>
-    <button class="button" onclick="goBack()">Back to Question</button>
+   
+    <div class="button-group">
+        <button class="button" onclick="goBack()">Back to Question</button>
+    </div>
 </div>
 
 <script>
-    // Retrieve the result from sessionStorage
     const result = JSON.parse(sessionStorage.getItem('result'));
 
-    // Display the result message
     document.getElementById('resultMessage').innerText = result.correct ? 
         "Correct!" : 
         `Incorrect! The correct answer is: ${result.correctAnswer}`;
 
-    // Display the explanation
     document.getElementById('explanation').innerText = result.explanation;
 
-    // Function to go back to the question page
     function goBack() {
         window.location.href = 'index.html'; // Change to your question page
     }

@@ -5,7 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
   <style>
-    body { font-family: 'Arial', sans-serif; background-color: #f7f7f7; color: #333; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; } h1 { font-size: 2.5rem; margin-bottom: 20px; } .container { text-align: center; background-color: #ffffff; padding: 30px 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 90%; max-width: 500px; } button { background-color: #6aaa64; /* Wordle green */ color: #ffffff; border: none; border-radius: 5px; padding: 15px 25px; font-size: 1rem; font-weight: bold; cursor: pointer; margin: 10px 5px; transition: background-color 0.3s ease; } button:hover { background-color: #5d9955; } button:active { background-color: #538d4e; } #loginButton { background-color: #c9c9c9; /* Gray color for login */ } #loginButton:hover { background-color: #b9b9b9; } #loginButton:active { background-color: #a9a9a9; }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #2c3e50, #4c8c8c);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      padding: 20px;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ecf0f1;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    button {
+      background-color: #4a8369;
+      border: none;
+      color: white;
+      padding: 15px 20px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      width: 150px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px; 
+    }
+    button:hover {
+      background-color: #45a072;
+      transform: scale(1.05);
+    }
+    button:active {
+      background-color: #388e3c;
+    }
+
+
 
   </style>
 </head>
@@ -15,10 +63,20 @@
       window.location.href = url;
     }
   </script>
+<<<<<<< HEAD
   <div class="container">
     <h1>Welcome to SAT Practice</h1>
     <button id="loginButton" onclick="switchPage('login.html')">Login</button> <!-- Placeholder Login Button -->
     <button onclick="switchPage('index.html')">Play</button> <!-- Redirect to index.html -->
+=======
+  <div class="form-container">
+    <img src="SATtlelogo.png" alt="logo" style="max-width: 100%; height: auto; width: 300px; border-radius: 20px;">
+    <h1></h1>
+    <div class="button-group">
+      <button id="loginButton" onclick="switchPage('login.html')">Login</button> 
+      <button onclick="switchPage('index.html')">Play</button>
+    </div>
+>>>>>>> 404a7b009079f122b4cf1c01702ae42af9b84ac0
   </div>
 </body>
 </html>
