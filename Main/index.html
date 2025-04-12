@@ -22,6 +22,57 @@
       overflow: hidden;
     }
 
+    .profile-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .profile-pic {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: #ecf0f1;
+      border: 2px solid #fff;
+      cursor: pointer;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #2c3e50;
+      font-weight: bold;
+      font-size: 1.2rem;
+      user-select: none;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #fff;
+      color: #333;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: none;
+      min-width: 120px;
+      z-index: 999;
+    }
+
+    .dropdown-menu button {
+      width: 100%;
+      padding: 10px;
+      background: none;
+      border: none;
+      text-align: left;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .dropdown-menu button:hover {
+      background-color: #f0f0f0;
+    }
+
+
     h1 {
       font-size: 3rem;
       text-align: center;

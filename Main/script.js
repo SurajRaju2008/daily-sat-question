@@ -1,5 +1,6 @@
 let selectedAnswer = null;
 let currentQuestion = null;
+let Streak = 0; 
 const questionContainer = document.getElementById("question");
 const btn = document.getElementById("button");
 const url = "https://opentdb.com/api.php?amount=1&category=19&type=multiple"; // Fetch 1 multiple-choice question
@@ -89,14 +90,12 @@ function displayExplation(isCorrect) {
   const resultMessage = isCorrect ? "Correct!" : `Incorrect! The correct answer is: ${currentQuestion.correctAnswer}`;
   document.getElementById('displayInfo').innerHTML = resultMessage;
   document.getElementById('container').classList.add('show');
-  document.getElementById('popup-buttons').innerHTML = `<button onclick="showExplanation()">Show Explanation</button>`;
-  document.getElementById('popup-explanation').innerHTML = ''; 
+  
+  
 }
 
 
-function showExplanation() {
-  document.getElementById('popup-explanation').innerHTML = currentQuestion.explanation;
-}
+
 
 
 function checkAnswer(selected, correctAnswer) {
@@ -104,8 +103,14 @@ function checkAnswer(selected, correctAnswer) {
   const result = {
       correct: isCorrect,
       correctAnswer: correctAnswer,
-      explanation: currentQuestion.explanation
   };
+
+  if (isCorrect) {
+    Streak++;
+  }
+  else {
+    Streak = 0;
+  }
   
   // Store the result in sessionStorage
   sessionStorage.setItem('result', JSON.stringify(result));
