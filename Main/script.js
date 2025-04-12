@@ -119,3 +119,10 @@ function checkAnswer(selected, correctAnswer) {
   window.location.href = 'displayAnswer.html';
 }
 
+function closePopup() {
+  document.getElementById("howToPlayPopup").classList.remove("show");
+}
+
+function closePopup() {
+  document.getElementById("howToPlayPopup").classList.remove("show");
+}

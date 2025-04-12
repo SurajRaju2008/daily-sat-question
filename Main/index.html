@@ -126,7 +126,7 @@
     }
 
     button {
-      background-color: #4CAF50;
+      background-color: #4a8369;
       border: none;
       color: white;
       padding: 15px 30px;
@@ -139,7 +139,7 @@
     }
 
     button:hover {
-      background-color: #45a049;
+      background-color: #45a072;
       transform: scale(1.05);
     }
 
@@ -186,7 +186,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       padding: 25px;
-      background-color: white;
+      background-color: 	#e0e6eb;
       color: #333;
       border-radius: 10px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -210,11 +210,54 @@
     .popup.show {
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
+    .close-btn {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 1.5rem;
+      color: #333;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .close-btn:hover {
+      color: #27ae60;
+    }
   </style>
   <title>Daily SAT Question</title>
 </head>
 <body>
+  <div id="howToPlayPopup" class="popup show">
+    <span class="close-btn" onclick="closePopup()">✖</span>
+    <h2 style="margin-bottom: 10px; font-size: 2rem; ">How To Play</h2>
+    <p style="font-size: 1.5rem; margin-bottom: 10px;">Guess the SATtle of the day</p>
+    <p style="font-size: 1rem; margin-bottom: 10px;">
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #ccc;">
+      <p style="font-size: 1rem; line-height: 1.6;">
+        🧠 <strong>Daily Challenge:</strong> Each day you log in, you'll receive a brand new, SAT-style multiple choice question to solve.
+        <br>It’s your one shot for the day — make it count!
+      </p>
+
+      <p style="font-size: 1rem; line-height: 1.6;">
+        🎯 <strong>Why One a Day?</strong> Practicing one high-quality question a day keeps your mind sharp without overwhelming you.
+        <br>Think of it like a brain warm-up — consistency is key to improvement!
+      </p>
+
+      <p style="font-size: 1rem; line-height: 1.6;">
+        🕐 <strong>How It Works:</strong> Questions refresh every 24 hours. So if you miss a day, the previous question is gone — no do-overs!
+      </p>
+
+      <p style="font-size: 1rem; line-height: 1.6;">
+        🚀 <strong>Track Your Growth:</strong> Over time, you’ll build confidence and speed by engaging with real SAT-style material — just one question at a time.
+      </p>
+
+      <p style="font-size: 1rem; line-height: 1.6;">
+        💡 <strong>Tip:</strong> Make it part of your daily routine. Wake up. Brush your teeth. Crush the SAT question.
+      </p>
+    </p>
+  
+  </div>
   <h1>Daily SAT Practice</h1>
+  <img src="SATtlelogo.png" alt="logo" style="max-width: 100%; height: auto; width: 200; border-radius: 20px;">
   <div class="content">
     <div id="question">Loading...</div>
     <div id="button"></div>
